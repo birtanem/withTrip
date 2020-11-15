@@ -439,5 +439,10 @@ prev는 num = 1 튜플을, next는 num = 2 튜플을 가리킨다.
 <img src="https://user-images.githubusercontent.com/64389409/99184088-f2a48780-2783-11eb-8441-bb94d9457f43.PNG" width="100%" heigth="100%">
 
 ## 화면 캡처
+<img src="https://user-images.githubusercontent.com/64389409/99186898-c9412700-2796-11eb-86fb-5ab290aae335.jpg" width="100%" heigth="100%">
+<img src="https://user-images.githubusercontent.com/64389409/99186901-cba38100-2796-11eb-939f-b41c25cefb07.jpg" width="100%" heigth="100%">
+<img src="https://user-images.githubusercontent.com/64389409/99186904-cf370800-2796-11eb-8e09-6e5a90793ef8.jpg" width="100%" heigth="100%">
+<img src="https://user-images.githubusercontent.com/64389409/99186911-d3632580-2796-11eb-91b0-d2bde9f2c0c3.jpg" width="100%" heigth="100%">
+<img src="https://user-images.githubusercontent.com/64389409/99186913-d52ce900-2796-11eb-8524-232d77e57813.jpg" width="100%" heigth="100%">
 
 
