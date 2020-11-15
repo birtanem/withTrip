@@ -1,0 +1,39 @@
+DELIMITER $$
+create procedure log_insert()
+BEGIN
+DECLARE joincount int;
+DECLARE revenue int;
+DECLARE readcount int;
+
+SELECT count(id) 
+INTO joincount
+FROM member 
+WHERE date_format(date, '%Y%m%d') =  date_format(date_add(now(), interval -1 day), '%Y%m%d');
+
+SELECT SUM(o_price)
+INTO revenue
+FROM `order`
+WHERE date_format(o_date, '%Y%m%d') =  date_format(date_add(now(), interval -1 day), '%Y%m%d');
+
+SELECT SUM(pl_readcount) - (SELECT MAX(l_readcount) FROM log) 
+INTO readcount
+FROM place;
+
+INSERT INTO log VALUES(null,joincount,revenue,readcount,date_add(now(), interval -10 day));
+
+END$$
+DELIMITER ;
+
+
+DELIMITER //
+create event log_insert
+on schedule
+EVERY 10 second
+STARTS '2020-06-23 18:27:30'
+DO
+call log_insert();
+//
+
+
+
+SELECT l.date as date, truncate((l2.revenue - l.revenue)/l.revenue*100,0) as rate, l2.revenue as revenue  FROM log l JOIN log l2 ON l.num = l2.num-1 order by date desc limit 7;

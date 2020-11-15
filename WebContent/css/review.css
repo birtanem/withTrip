@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+table {
+	
+  width: 100%;
+  
+}
+td, th {
+  border: 1px;
+  text-align: left;
+  padding: 8px;
+}
+tr.title{
+
+	background-color: black;
+	color: white;
+}
+
+td.num {
+	width: 8%;
+	border: 1px solid #dddddd;
+  	text-align: center;
+}
+td.kategorie{
+	width: 14%;
+	border: 1px solid #dddddd;
+  	text-align: center;
+}
+
+td.subject {
+	width: 50%;
+	border: 1px solid #dddddd;
+  	text-align: left;
+}
+td.name {
+	width: 10%;
+	border: 1px solid #dddddd;
+  	text-align: center;
+}
+td.readcount {
+	width: 8%;
+	border: 1px solid #dddddd;
+  	text-align: center;
+}
+td.date {
+	width: 10%;
+	border: 1px solid #dddddd;
+  	text-align: center;
+}
