@@ -3,7 +3,7 @@
 > 부산의 여행지를 소개하고 상품을 파는 웹사이트
 
 [실행화면 유튜브로 보기](https://www.youtube.com/watch?v=sXzx_DXEpVU)  
-[호스팅 주소로 보기](http://itwillbs10.cafe24.com/withTrip)
+[도메인 주소](http://itwillbs10.cafe24.com/withTrip)
 
 ## 개발 환경
 **Front-end**
