@@ -29,10 +29,8 @@
 > MVC2 패턴이란 ?   
 > * MVC1 과는 달리 브라우저의 요청을 하나의 서블릿이 받아서 controller, action, service, dao 단으로 나누어 처리한다. 
 
-### 유스케이스
-
-### DB  
-DBCP : 커넥션풀에서 커넥션을 꺼내 쓰고 반환하는 방식
+## DBCP  
+커넥션풀에서 커넥션을 꺼내 쓰고 반환하는 방식
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
